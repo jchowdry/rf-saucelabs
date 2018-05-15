@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170618 00:09:35.951" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/javed/Documents/workspace/browserstack/Tests/LoginTest.robot" id="s1" name="LoginTest">
+<test id="s1-t1" name="Login Should Failed With Unregistered Mail Adress">
+<kw name="Open LinkedinPage" library="setup">
+<arguments>
+<arg>BROWSER=Chrome</arg>
+<arg>BROWSER_VERSION=47.0</arg>
+<arg>OS=OS X</arg>
+<arg>OS_VERSION=El Capitan</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>url=${SiteUrl}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>remote_url=${RemoteURL}</arg>
+<arg>desired_capabilities=browser:${BROWSER},browser_version:${BROWSER_VERSION},os:${OS},os_version:${OS_VERSION}</arg>
+</arguments>
+<msg timestamp="20170618 00:09:36.138" level="INFO">Opening browser 'Chrome' to base url 'http://www.linkedin.com' through remote server at 'http://digitalops@wnyc.org:N21vdRPwpz6Bynaq3v24@hub.browserstack.com/wd/hub'</msg>
+<status status="PASS" endtime="20170618 00:09:43.553" starttime="20170618 00:09:36.137"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:09:43.553" starttime="20170618 00:09:36.137"></status>
+</kw>
+<kw name="Enter User Name" library="setup">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=login-email</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20170618 00:09:43.555" level="INFO">Typing text 'swtestacademy@gmail.com' into text field 'id=login-email'</msg>
+<status status="PASS" endtime="20170618 00:09:43.952" starttime="20170618 00:09:43.555"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:09:43.952" starttime="20170618 00:09:43.554"></status>
+</kw>
+<kw name="Enter Wrong Password" library="setup">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=login-password</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20170618 00:09:43.953" level="INFO">Typing text 'wrongpass' into text field 'id=login-password'</msg>
+<status status="PASS" endtime="20170618 00:09:44.248" starttime="20170618 00:09:43.953"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:09:44.248" starttime="20170618 00:09:43.952"></status>
+</kw>
+<kw name="Click Login" library="setup">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=[name=submit]</arg>
+</arguments>
+<msg timestamp="20170618 00:09:44.249" level="INFO">Clicking button 'css=[name=submit]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170618 00:09:45.156" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170618 00:09:45.157" starttime="20170618 00:09:44.398"></status>
+</kw>
+<msg timestamp="20170618 00:09:45.160" level="FAIL">ValueError: Element locator 'css=[name=submit]' did not match any elements.</msg>
+<status status="FAIL" endtime="20170618 00:09:45.160" starttime="20170618 00:09:44.249"></status>
+</kw>
+<status status="FAIL" endtime="20170618 00:09:45.161" starttime="20170618 00:09:44.248"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170618 00:09:58.501" starttime="20170618 00:09:45.161"></status>
+</kw>
+<tags>
+<tag>BrowserStack</tag>
+</tags>
+<status status="FAIL" endtime="20170618 00:09:58.502" critical="yes" starttime="20170618 00:09:36.136">ValueError: Element locator 'css=[name=submit]' did not match any elements.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170618 00:09:58.505" starttime="20170618 00:09:58.504"></status>
+</kw>
+<status status="FAIL" endtime="20170618 00:09:58.505" starttime="20170618 00:09:35.953"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">BrowserStack</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="LoginTest" pass="0">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
