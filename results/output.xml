@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180515 13:49:43.436" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<robot generated="20180515 16:44:34.063" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/jchowdry/Workspace/rf-saucelabs/saucelabs/Tests/Pledge/MonthlyDonationSuite.robot" id="s1" name="MonthlyDonationSuite">
 <test id="s1-t1" name="User should be able pledge using visa Card">
 <kw type="setup" name="Begin Web Test" library="SetupEnv">
@@ -11,10 +11,10 @@
 <arg>remote_url=${REMOTE_URL}</arg>
 <arg>desired_capabilities=${DESIRED_CAPABILITIES}</arg>
 </arguments>
-<msg timestamp="20180515 13:49:44.188" level="INFO">Opening browser 'Chrome' to base url 'about:blank' through remote server at 'http://jchowdry:45250833-e563-4360-8c72-a0d73e1385a5@ondemand.saucelabs.com:80/wd/hub'</msg>
-<status status="PASS" endtime="20180515 13:49:50.000" starttime="20180515 13:49:44.188"></status>
+<msg timestamp="20180515 16:44:34.246" level="INFO">Opening browser 'Chrome' to base url 'about:blank' through remote server at 'http://jchowdry:45250833-e563-4360-8c72-a0d73e1385a5@ondemand.saucelabs.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20180515 16:45:06.709" starttime="20180515 16:44:34.246"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:49:50.000" starttime="20180515 13:49:44.186"></status>
+<status status="PASS" endtime="20180515 16:45:06.709" starttime="20180515 16:44:34.244"></status>
 </kw>
 <kw name="User should be able to navigate to pledge app and pledge using visa card" library="MonthlyDonation">
 <kw name="Load Page" library="PledgePage">
@@ -23,10 +23,10 @@
 <arguments>
 <arg>${URL.${ENVIRONMENT}}</arg>
 </arguments>
-<msg timestamp="20180515 13:49:50.002" level="INFO">Opening url 'https://pledge-wnyc.demo.nypr.digital/donate/main/onestep/'</msg>
-<status status="PASS" endtime="20180515 13:49:54.506" starttime="20180515 13:49:50.001"></status>
+<msg timestamp="20180515 16:45:06.710" level="INFO">Opening url 'https://pledge-wnyc.demo.nypr.digital/donate/main/onestep/'</msg>
+<status status="PASS" endtime="20180515 16:45:11.955" starttime="20180515 16:45:06.710"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:49:54.507" starttime="20180515 13:49:50.001"></status>
+<status status="PASS" endtime="20180515 16:45:11.955" starttime="20180515 16:45:06.710"></status>
 </kw>
 <kw name="Verify Page Loaded" library="PledgePage">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -34,9 +34,9 @@
 <arguments>
 <arg>Pledge or Renew Your Support</arg>
 </arguments>
-<status status="PASS" endtime="20180515 13:49:55.017" starttime="20180515 13:49:54.508"></status>
+<status status="PASS" endtime="20180515 16:45:13.000" starttime="20180515 16:45:11.956"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:49:55.017" starttime="20180515 13:49:54.507"></status>
+<status status="PASS" endtime="20180515 16:45:13.000" starttime="20180515 16:45:11.955"></status>
 </kw>
 <kw name="Select Donation Amount" library="DonationAmount">
 <kw name="Click Element" library="Selenium2Library">
@@ -44,10 +44,10 @@
 <arguments>
 <arg>xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]</arg>
 </arguments>
-<msg timestamp="20180515 13:49:55.018" level="INFO">Clicking element 'xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]'.</msg>
-<status status="PASS" endtime="20180515 13:49:55.838" starttime="20180515 13:49:55.018"></status>
+<msg timestamp="20180515 16:45:13.001" level="INFO">Clicking element 'xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]'.</msg>
+<status status="PASS" endtime="20180515 16:45:15.095" starttime="20180515 16:45:13.001"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:49:55.838" starttime="20180515 13:49:55.018"></status>
+<status status="PASS" endtime="20180515 16:45:15.095" starttime="20180515 16:45:13.000"></status>
 </kw>
 <kw name="Input Member information" library="MemberInfo">
 <kw name="Input Text" library="Selenium2Library">
@@ -56,8 +56,8 @@
 <arg>id=first-name</arg>
 <arg>${FIRST_NAME}</arg>
 </arguments>
-<msg timestamp="20180515 13:49:55.839" level="INFO">Typing text 'Jay' into text field 'id=first-name'</msg>
-<status status="PASS" endtime="20180515 13:49:57.066" starttime="20180515 13:49:55.839"></status>
+<msg timestamp="20180515 16:45:15.096" level="INFO">Typing text 'Jay' into text field 'id=first-name'</msg>
+<status status="PASS" endtime="20180515 16:45:18.240" starttime="20180515 16:45:15.096"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -65,8 +65,8 @@
 <arg>id=last-name</arg>
 <arg>${LAST_NAME}</arg>
 </arguments>
-<msg timestamp="20180515 13:49:57.067" level="INFO">Typing text 'Test' into text field 'id=last-name'</msg>
-<status status="PASS" endtime="20180515 13:49:58.166" starttime="20180515 13:49:57.066"></status>
+<msg timestamp="20180515 16:45:18.241" level="INFO">Typing text 'Test' into text field 'id=last-name'</msg>
+<status status="PASS" endtime="20180515 16:45:21.385" starttime="20180515 16:45:18.240"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -74,8 +74,8 @@
 <arg>id=email</arg>
 <arg>${EMAIL_ID}</arg>
 </arguments>
-<msg timestamp="20180515 13:49:58.167" level="INFO">Typing text 'test@example.com' into text field 'id=email'</msg>
-<status status="PASS" endtime="20180515 13:49:59.524" starttime="20180515 13:49:58.166"></status>
+<msg timestamp="20180515 16:45:21.386" level="INFO">Typing text 'test@example.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20180515 16:45:24.595" starttime="20180515 16:45:21.385"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -83,8 +83,8 @@
 <arg>id=street-address</arg>
 <arg>${STREET_ADDRESS}</arg>
 </arguments>
-<msg timestamp="20180515 13:49:59.525" level="INFO">Typing text '160 Varrick Street' into text field 'id=street-address'</msg>
-<status status="PASS" endtime="20180515 13:50:01.121" starttime="20180515 13:49:59.524"></status>
+<msg timestamp="20180515 16:45:24.595" level="INFO">Typing text '160 Varrick Street' into text field 'id=street-address'</msg>
+<status status="PASS" endtime="20180515 16:45:28.724" starttime="20180515 16:45:24.595"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -92,8 +92,8 @@
 <arg>id=city</arg>
 <arg>${CITY}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:01.122" level="INFO">Typing text 'New York' into text field 'id=city'</msg>
-<status status="PASS" endtime="20180515 13:50:02.698" starttime="20180515 13:50:01.122"></status>
+<msg timestamp="20180515 16:45:28.725" level="INFO">Typing text 'New York' into text field 'id=city'</msg>
+<status status="PASS" endtime="20180515 16:45:31.870" starttime="20180515 16:45:28.725"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -101,8 +101,8 @@
 <arg>name=state</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20180515 13:50:02.698" level="INFO">Selecting value(s) '1' from list 'name=state'.</msg>
-<status status="PASS" endtime="20180515 13:50:04.626" starttime="20180515 13:50:02.698"></status>
+<msg timestamp="20180515 16:45:31.871" level="INFO">Selecting value(s) '1' from list 'name=state'.</msg>
+<status status="PASS" endtime="20180515 16:45:40.257" starttime="20180515 16:45:31.871"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -110,10 +110,10 @@
 <arg>id=zip-code</arg>
 <arg>${ZIPCODE}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:04.626" level="INFO">Typing text '10013' into text field 'id=zip-code'</msg>
-<status status="PASS" endtime="20180515 13:50:06.079" starttime="20180515 13:50:04.626"></status>
+<msg timestamp="20180515 16:45:40.258" level="INFO">Typing text '10013' into text field 'id=zip-code'</msg>
+<status status="PASS" endtime="20180515 16:45:43.400" starttime="20180515 16:45:40.257"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:06.079" starttime="20180515 13:49:55.839"></status>
+<status status="PASS" endtime="20180515 16:45:43.400" starttime="20180515 16:45:15.095"></status>
 </kw>
 <kw name="Input Visa Card Information" library="CreditCard">
 <kw name="Input Text" library="Selenium2Library">
@@ -122,8 +122,8 @@
 <arg>id=pledge-credit-card</arg>
 <arg>${VISA_CARD}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:06.081" level="INFO">Typing text '41111111111111111' into text field 'id=pledge-credit-card'</msg>
-<status status="PASS" endtime="20180515 13:50:07.409" starttime="20180515 13:50:06.081"></status>
+<msg timestamp="20180515 16:45:43.401" level="INFO">Typing text '41111111111111111' into text field 'id=pledge-credit-card'</msg>
+<status status="PASS" endtime="20180515 16:45:46.546" starttime="20180515 16:45:43.401"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -131,8 +131,8 @@
 <arg>id=pledge-expiration-month</arg>
 <arg>${EXPIRE_MONTH}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:07.410" level="INFO">Selecting value(s) '12' from list 'id=pledge-expiration-month'.</msg>
-<status status="PASS" endtime="20180515 13:50:09.276" starttime="20180515 13:50:07.410"></status>
+<msg timestamp="20180515 16:45:46.546" level="INFO">Selecting value(s) '12' from list 'id=pledge-expiration-month'.</msg>
+<status status="PASS" endtime="20180515 16:45:53.885" starttime="20180515 16:45:46.546"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -140,10 +140,10 @@
 <arg>id=pledge-expiration-year</arg>
 <arg>${EXPIRE_YEAR}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:09.277" level="INFO">Selecting value(s) '2020' from list 'id=pledge-expiration-year'.</msg>
-<status status="PASS" endtime="20180515 13:50:11.301" starttime="20180515 13:50:09.276"></status>
+<msg timestamp="20180515 16:45:53.885" level="INFO">Selecting value(s) '2020' from list 'id=pledge-expiration-year'.</msg>
+<status status="PASS" endtime="20180515 16:46:03.318" starttime="20180515 16:45:53.885"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:11.301" starttime="20180515 13:50:06.080"></status>
+<status status="PASS" endtime="20180515 16:46:03.318" starttime="20180515 16:45:43.400"></status>
 </kw>
 <kw name="Submit Donation" library="PledgePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -151,20 +151,20 @@
 <arguments>
 <arg>xpath=//input[@type='submit']</arg>
 </arguments>
-<msg timestamp="20180515 13:50:11.302" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
-<status status="PASS" endtime="20180515 13:50:12.907" starttime="20180515 13:50:11.302"></status>
+<msg timestamp="20180515 16:46:03.319" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" endtime="20180515 16:46:05.417" starttime="20180515 16:46:03.318"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:12.907" starttime="20180515 13:50:11.301"></status>
+<status status="PASS" endtime="20180515 16:46:05.417" starttime="20180515 16:46:03.318"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:12.907" starttime="20180515 13:49:50.001"></status>
+<status status="PASS" endtime="20180515 16:46:05.417" starttime="20180515 16:45:06.709"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180515 13:50:17.908" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180515 13:50:17.909" starttime="20180515 13:50:12.908"></status>
+<msg timestamp="20180515 16:46:10.418" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180515 16:46:10.419" starttime="20180515 16:46:05.418"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="SetupEnv">
 <kw name="Run Keyword If" library="BuiltIn">
@@ -184,16 +184,16 @@
 <arg>${TEST_TAGS}</arg>
 <arg>${REMOTE_URL}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:18.573" html="yes" level="INFO">&lt;a href="https://saucelabs.com/jobs/1da82431876249bd80b0789c7f970f1b/video.flv"&gt;video.flv&lt;/a&gt;</msg>
-<status status="PASS" endtime="20180515 13:50:18.573" starttime="20180515 13:50:17.911"></status>
+<msg timestamp="20180515 16:46:15.905" html="yes" level="INFO">&lt;a href="https://saucelabs.com/jobs/02ed731f8e4d4019bdb62da359d3725d/video.flv"&gt;video.flv&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180515 16:46:15.905" starttime="20180515 16:46:10.421"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:18.573" starttime="20180515 13:50:17.910"></status>
+<status status="PASS" endtime="20180515 16:46:15.905" starttime="20180515 16:46:10.420"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180515 13:50:18.981" starttime="20180515 13:50:18.574"></status>
+<status status="PASS" endtime="20180515 16:46:16.947" starttime="20180515 16:46:15.905"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:18.982" starttime="20180515 13:50:17.909"></status>
+<status status="PASS" endtime="20180515 16:46:16.947" starttime="20180515 16:46:10.420"></status>
 </kw>
 <doc>This test cases to ensure users ability to pledge using Visa Card.</doc>
 <tags>
@@ -201,7 +201,7 @@
 <tag>Regression</tag>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" endtime="20180515 13:50:18.982" critical="yes" starttime="20180515 13:49:44.185"></status>
+<status status="PASS" endtime="20180515 16:46:16.947" critical="yes" starttime="20180515 16:44:34.243"></status>
 </test>
 <test id="s1-t2" name="User should be able pledge using amex Card">
 <kw type="setup" name="Begin Web Test" library="SetupEnv">
@@ -213,10 +213,10 @@
 <arg>remote_url=${REMOTE_URL}</arg>
 <arg>desired_capabilities=${DESIRED_CAPABILITIES}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:18.987" level="INFO">Opening browser 'Chrome' to base url 'about:blank' through remote server at 'http://jchowdry:45250833-e563-4360-8c72-a0d73e1385a5@ondemand.saucelabs.com:80/wd/hub'</msg>
-<status status="PASS" endtime="20180515 13:50:25.942" starttime="20180515 13:50:18.985"></status>
+<msg timestamp="20180515 16:46:16.950" level="INFO">Opening browser 'Chrome' to base url 'about:blank' through remote server at 'http://jchowdry:45250833-e563-4360-8c72-a0d73e1385a5@ondemand.saucelabs.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20180515 16:46:34.767" starttime="20180515 16:46:16.949"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:25.942" starttime="20180515 13:50:18.984"></status>
+<status status="PASS" endtime="20180515 16:46:34.768" starttime="20180515 16:46:16.949"></status>
 </kw>
 <kw name="User should be able to navigate to pledge app and pledge using Amex card" library="MonthlyDonation">
 <kw name="Load Page" library="PledgePage">
@@ -225,10 +225,10 @@
 <arguments>
 <arg>${URL.${ENVIRONMENT}}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:25.944" level="INFO">Opening url 'https://pledge-wnyc.demo.nypr.digital/donate/main/onestep/'</msg>
-<status status="PASS" endtime="20180515 13:50:30.951" starttime="20180515 13:50:25.944"></status>
+<msg timestamp="20180515 16:46:34.770" level="INFO">Opening url 'https://pledge-wnyc.demo.nypr.digital/donate/main/onestep/'</msg>
+<status status="PASS" endtime="20180515 16:46:47.406" starttime="20180515 16:46:34.769"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:30.951" starttime="20180515 13:50:25.943"></status>
+<status status="PASS" endtime="20180515 16:46:47.406" starttime="20180515 16:46:34.769"></status>
 </kw>
 <kw name="Verify Page Loaded" library="PledgePage">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -236,9 +236,9 @@
 <arguments>
 <arg>Pledge or Renew Your Support</arg>
 </arguments>
-<status status="PASS" endtime="20180515 13:50:31.293" starttime="20180515 13:50:30.952"></status>
+<status status="PASS" endtime="20180515 16:46:49.443" starttime="20180515 16:46:47.407"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:31.293" starttime="20180515 13:50:30.952"></status>
+<status status="PASS" endtime="20180515 16:46:49.443" starttime="20180515 16:46:47.406"></status>
 </kw>
 <kw name="Select Donation Amount" library="DonationAmount">
 <kw name="Click Element" library="Selenium2Library">
@@ -246,10 +246,10 @@
 <arguments>
 <arg>xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]</arg>
 </arguments>
-<msg timestamp="20180515 13:50:31.294" level="INFO">Clicking element 'xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]'.</msg>
-<status status="PASS" endtime="20180515 13:50:32.100" starttime="20180515 13:50:31.294"></status>
+<msg timestamp="20180515 16:46:49.444" level="INFO">Clicking element 'xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]'.</msg>
+<status status="PASS" endtime="20180515 16:46:53.637" starttime="20180515 16:46:49.444"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:32.101" starttime="20180515 13:50:31.293"></status>
+<status status="PASS" endtime="20180515 16:46:53.637" starttime="20180515 16:46:49.444"></status>
 </kw>
 <kw name="Input Member information" library="MemberInfo">
 <kw name="Input Text" library="Selenium2Library">
@@ -258,8 +258,8 @@
 <arg>id=first-name</arg>
 <arg>${FIRST_NAME}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:32.102" level="INFO">Typing text 'Jay' into text field 'id=first-name'</msg>
-<status status="PASS" endtime="20180515 13:50:33.343" starttime="20180515 13:50:32.101"></status>
+<msg timestamp="20180515 16:46:53.638" level="INFO">Typing text 'Jay' into text field 'id=first-name'</msg>
+<status status="PASS" endtime="20180515 16:46:57.830" starttime="20180515 16:46:53.638"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -267,8 +267,8 @@
 <arg>id=last-name</arg>
 <arg>${LAST_NAME}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:33.343" level="INFO">Typing text 'Test' into text field 'id=last-name'</msg>
-<status status="PASS" endtime="20180515 13:50:34.646" starttime="20180515 13:50:33.343"></status>
+<msg timestamp="20180515 16:46:57.831" level="INFO">Typing text 'Test' into text field 'id=last-name'</msg>
+<status status="PASS" endtime="20180515 16:47:01.005" starttime="20180515 16:46:57.830"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -276,8 +276,8 @@
 <arg>id=email</arg>
 <arg>${EMAIL_ID}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:34.647" level="INFO">Typing text 'test@example.com' into text field 'id=email'</msg>
-<status status="PASS" endtime="20180515 13:50:35.979" starttime="20180515 13:50:34.647"></status>
+<msg timestamp="20180515 16:47:01.005" level="INFO">Typing text 'test@example.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20180515 16:47:09.361" starttime="20180515 16:47:01.005"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -285,8 +285,8 @@
 <arg>id=street-address</arg>
 <arg>${STREET_ADDRESS}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:35.981" level="INFO">Typing text '160 Varrick Street' into text field 'id=street-address'</msg>
-<status status="PASS" endtime="20180515 13:50:37.701" starttime="20180515 13:50:35.980"></status>
+<msg timestamp="20180515 16:47:09.362" level="INFO">Typing text '160 Varrick Street' into text field 'id=street-address'</msg>
+<status status="PASS" endtime="20180515 16:47:14.603" starttime="20180515 16:47:09.361"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -294,8 +294,8 @@
 <arg>id=city</arg>
 <arg>${CITY}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:37.702" level="INFO">Typing text 'New York' into text field 'id=city'</msg>
-<status status="PASS" endtime="20180515 13:50:38.864" starttime="20180515 13:50:37.701"></status>
+<msg timestamp="20180515 16:47:14.603" level="INFO">Typing text 'New York' into text field 'id=city'</msg>
+<status status="PASS" endtime="20180515 16:47:18.797" starttime="20180515 16:47:14.603"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -303,8 +303,8 @@
 <arg>name=state</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20180515 13:50:38.864" level="INFO">Selecting value(s) '1' from list 'name=state'.</msg>
-<status status="PASS" endtime="20180515 13:50:40.793" starttime="20180515 13:50:38.864"></status>
+<msg timestamp="20180515 16:47:18.797" level="INFO">Selecting value(s) '1' from list 'name=state'.</msg>
+<status status="PASS" endtime="20180515 16:47:26.135" starttime="20180515 16:47:18.797"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -312,10 +312,10 @@
 <arg>id=zip-code</arg>
 <arg>${ZIPCODE}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:40.793" level="INFO">Typing text '10013' into text field 'id=zip-code'</msg>
-<status status="PASS" endtime="20180515 13:50:42.429" starttime="20180515 13:50:40.793"></status>
+<msg timestamp="20180515 16:47:26.136" level="INFO">Typing text '10013' into text field 'id=zip-code'</msg>
+<status status="PASS" endtime="20180515 16:47:29.279" starttime="20180515 16:47:26.136"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:42.429" starttime="20180515 13:50:32.101"></status>
+<status status="PASS" endtime="20180515 16:47:29.279" starttime="20180515 16:46:53.637"></status>
 </kw>
 <kw name="Input Amex Card Information" library="CreditCard">
 <kw name="Input Text" library="Selenium2Library">
@@ -324,8 +324,8 @@
 <arg>id=pledge-credit-card</arg>
 <arg>${AMEX_CARD}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:42.430" level="INFO">Typing text '378282246310005' into text field 'id=pledge-credit-card'</msg>
-<status status="PASS" endtime="20180515 13:50:44.375" starttime="20180515 13:50:42.430"></status>
+<msg timestamp="20180515 16:47:29.281" level="INFO">Typing text '378282246310005' into text field 'id=pledge-credit-card'</msg>
+<status status="PASS" endtime="20180515 16:47:32.500" starttime="20180515 16:47:29.280"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -333,8 +333,8 @@
 <arg>id=pledge-expiration-month</arg>
 <arg>${EXPIRE_MONTH}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:44.376" level="INFO">Selecting value(s) '12' from list 'id=pledge-expiration-month'.</msg>
-<status status="PASS" endtime="20180515 13:50:46.239" starttime="20180515 13:50:44.375"></status>
+<msg timestamp="20180515 16:47:32.501" level="INFO">Selecting value(s) '12' from list 'id=pledge-expiration-month'.</msg>
+<status status="PASS" endtime="20180515 16:47:41.859" starttime="20180515 16:47:32.500"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -342,10 +342,10 @@
 <arg>id=pledge-expiration-year</arg>
 <arg>${EXPIRE_YEAR}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:46.240" level="INFO">Selecting value(s) '2020' from list 'id=pledge-expiration-year'.</msg>
-<status status="PASS" endtime="20180515 13:50:48.163" starttime="20180515 13:50:46.239"></status>
+<msg timestamp="20180515 16:47:41.860" level="INFO">Selecting value(s) '2020' from list 'id=pledge-expiration-year'.</msg>
+<status status="PASS" endtime="20180515 16:47:49.199" starttime="20180515 16:47:41.859"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:48.164" starttime="20180515 13:50:42.429"></status>
+<status status="PASS" endtime="20180515 16:47:49.199" starttime="20180515 16:47:29.280"></status>
 </kw>
 <kw name="Submit Donation" library="PledgePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -353,12 +353,12 @@
 <arguments>
 <arg>xpath=//input[@type='submit']</arg>
 </arguments>
-<msg timestamp="20180515 13:50:48.165" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
-<status status="PASS" endtime="20180515 13:50:49.086" starttime="20180515 13:50:48.165"></status>
+<msg timestamp="20180515 16:47:49.200" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" endtime="20180515 16:47:51.294" starttime="20180515 16:47:49.200"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:49.086" starttime="20180515 13:50:48.164"></status>
+<status status="PASS" endtime="20180515 16:47:51.294" starttime="20180515 16:47:49.199"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:49.087" starttime="20180515 13:50:25.942"></status>
+<status status="PASS" endtime="20180515 16:47:51.295" starttime="20180515 16:46:34.768"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="SetupEnv">
 <kw name="Run Keyword If" library="BuiltIn">
@@ -378,23 +378,23 @@
 <arg>${TEST_TAGS}</arg>
 <arg>${REMOTE_URL}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:49.602" html="yes" level="INFO">&lt;a href="https://saucelabs.com/jobs/64074e26d1c24419a4fb9629c9fc3308/video.flv"&gt;video.flv&lt;/a&gt;</msg>
-<status status="PASS" endtime="20180515 13:50:49.602" starttime="20180515 13:50:49.088"></status>
+<msg timestamp="20180515 16:47:54.441" html="yes" level="INFO">&lt;a href="https://saucelabs.com/jobs/fb34c79bd8f040a7918411ce608a9bf7/video.flv"&gt;video.flv&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180515 16:47:54.441" starttime="20180515 16:47:51.297"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:49.602" starttime="20180515 13:50:49.087"></status>
+<status status="PASS" endtime="20180515 16:47:54.441" starttime="20180515 16:47:51.296"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180515 13:50:49.904" starttime="20180515 13:50:49.603"></status>
+<status status="PASS" endtime="20180515 16:47:55.488" starttime="20180515 16:47:54.441"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:49.904" starttime="20180515 13:50:49.087"></status>
+<status status="PASS" endtime="20180515 16:47:55.488" starttime="20180515 16:47:51.295"></status>
 </kw>
 <doc>This test cases to ensure users ability to pledge using Amex Card.</doc>
 <tags>
 <tag>Regression</tag>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" endtime="20180515 13:50:49.904" critical="yes" starttime="20180515 13:50:18.983"></status>
+<status status="PASS" endtime="20180515 16:47:55.488" critical="yes" starttime="20180515 16:46:16.948"></status>
 </test>
 <test id="s1-t3" name="User should be able pledge using Master Card">
 <kw type="setup" name="Begin Web Test" library="SetupEnv">
@@ -406,10 +406,10 @@
 <arg>remote_url=${REMOTE_URL}</arg>
 <arg>desired_capabilities=${DESIRED_CAPABILITIES}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:49.906" level="INFO">Opening browser 'Chrome' to base url 'about:blank' through remote server at 'http://jchowdry:45250833-e563-4360-8c72-a0d73e1385a5@ondemand.saucelabs.com:80/wd/hub'</msg>
-<status status="PASS" endtime="20180515 13:50:55.849" starttime="20180515 13:50:49.906"></status>
+<msg timestamp="20180515 16:47:55.491" level="INFO">Opening browser 'Chrome' to base url 'about:blank' through remote server at 'http://jchowdry:45250833-e563-4360-8c72-a0d73e1385a5@ondemand.saucelabs.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20180515 16:48:05.969" starttime="20180515 16:47:55.490"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:55.850" starttime="20180515 13:50:49.906"></status>
+<status status="PASS" endtime="20180515 16:48:05.969" starttime="20180515 16:47:55.490"></status>
 </kw>
 <kw name="User should be able to navigate to pledge app and pledge using Master card" library="MonthlyDonation">
 <kw name="Load Page" library="PledgePage">
@@ -418,10 +418,10 @@
 <arguments>
 <arg>${URL.${ENVIRONMENT}}</arg>
 </arguments>
-<msg timestamp="20180515 13:50:55.851" level="INFO">Opening url 'https://pledge-wnyc.demo.nypr.digital/donate/main/onestep/'</msg>
-<status status="PASS" endtime="20180515 13:50:59.753" starttime="20180515 13:50:55.851"></status>
+<msg timestamp="20180515 16:48:05.970" level="INFO">Opening url 'https://pledge-wnyc.demo.nypr.digital/donate/main/onestep/'</msg>
+<status status="PASS" endtime="20180515 16:48:10.163" starttime="20180515 16:48:05.970"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:50:59.754" starttime="20180515 13:50:55.850"></status>
+<status status="PASS" endtime="20180515 16:48:10.163" starttime="20180515 16:48:05.970"></status>
 </kw>
 <kw name="Verify Page Loaded" library="PledgePage">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -429,9 +429,9 @@
 <arguments>
 <arg>Pledge or Renew Your Support</arg>
 </arguments>
-<status status="PASS" endtime="20180515 13:51:00.125" starttime="20180515 13:50:59.755"></status>
+<status status="PASS" endtime="20180515 16:48:11.211" starttime="20180515 16:48:10.163"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:00.125" starttime="20180515 13:50:59.754"></status>
+<status status="PASS" endtime="20180515 16:48:11.211" starttime="20180515 16:48:10.163"></status>
 </kw>
 <kw name="Select Donation Amount" library="DonationAmount">
 <kw name="Click Element" library="Selenium2Library">
@@ -439,10 +439,10 @@
 <arguments>
 <arg>xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]</arg>
 </arguments>
-<msg timestamp="20180515 13:51:00.126" level="INFO">Clicking element 'xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]'.</msg>
-<status status="PASS" endtime="20180515 13:51:00.963" starttime="20180515 13:51:00.126"></status>
+<msg timestamp="20180515 16:48:11.212" level="INFO">Clicking element 'xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]'.</msg>
+<status status="PASS" endtime="20180515 16:48:13.306" starttime="20180515 16:48:11.212"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:00.963" starttime="20180515 13:51:00.125"></status>
+<status status="PASS" endtime="20180515 16:48:13.307" starttime="20180515 16:48:11.211"></status>
 </kw>
 <kw name="Input Member information" library="MemberInfo">
 <kw name="Input Text" library="Selenium2Library">
@@ -451,8 +451,8 @@
 <arg>id=first-name</arg>
 <arg>${FIRST_NAME}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:00.964" level="INFO">Typing text 'Jay' into text field 'id=first-name'</msg>
-<status status="PASS" endtime="20180515 13:51:02.192" starttime="20180515 13:51:00.964"></status>
+<msg timestamp="20180515 16:48:13.308" level="INFO">Typing text 'Jay' into text field 'id=first-name'</msg>
+<status status="PASS" endtime="20180515 16:48:16.451" starttime="20180515 16:48:13.307"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -460,8 +460,8 @@
 <arg>id=last-name</arg>
 <arg>${LAST_NAME}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:02.193" level="INFO">Typing text 'Test' into text field 'id=last-name'</msg>
-<status status="PASS" endtime="20180515 13:51:03.395" starttime="20180515 13:51:02.193"></status>
+<msg timestamp="20180515 16:48:16.451" level="INFO">Typing text 'Test' into text field 'id=last-name'</msg>
+<status status="PASS" endtime="20180515 16:48:19.664" starttime="20180515 16:48:16.451"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -469,8 +469,8 @@
 <arg>id=email</arg>
 <arg>${EMAIL_ID}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:03.396" level="INFO">Typing text 'test@example.com' into text field 'id=email'</msg>
-<status status="PASS" endtime="20180515 13:51:04.856" starttime="20180515 13:51:03.395"></status>
+<msg timestamp="20180515 16:48:19.665" level="INFO">Typing text 'test@example.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20180515 16:48:23.791" starttime="20180515 16:48:19.665"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -478,8 +478,8 @@
 <arg>id=street-address</arg>
 <arg>${STREET_ADDRESS}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:04.857" level="INFO">Typing text '160 Varrick Street' into text field 'id=street-address'</msg>
-<status status="PASS" endtime="20180515 13:51:06.498" starttime="20180515 13:51:04.856"></status>
+<msg timestamp="20180515 16:48:23.792" level="INFO">Typing text '160 Varrick Street' into text field 'id=street-address'</msg>
+<status status="PASS" endtime="20180515 16:48:26.936" starttime="20180515 16:48:23.792"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -487,8 +487,8 @@
 <arg>id=city</arg>
 <arg>${CITY}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:06.499" level="INFO">Typing text 'New York' into text field 'id=city'</msg>
-<status status="PASS" endtime="20180515 13:51:07.747" starttime="20180515 13:51:06.499"></status>
+<msg timestamp="20180515 16:48:26.937" level="INFO">Typing text 'New York' into text field 'id=city'</msg>
+<status status="PASS" endtime="20180515 16:48:30.081" starttime="20180515 16:48:26.937"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -496,8 +496,8 @@
 <arg>name=state</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20180515 13:51:07.748" level="INFO">Selecting value(s) '1' from list 'name=state'.</msg>
-<status status="PASS" endtime="20180515 13:51:09.713" starttime="20180515 13:51:07.748"></status>
+<msg timestamp="20180515 16:48:30.082" level="INFO">Selecting value(s) '1' from list 'name=state'.</msg>
+<status status="PASS" endtime="20180515 16:48:37.418" starttime="20180515 16:48:30.081"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -505,10 +505,10 @@
 <arg>id=zip-code</arg>
 <arg>${ZIPCODE}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:09.713" level="INFO">Typing text '10013' into text field 'id=zip-code'</msg>
-<status status="PASS" endtime="20180515 13:51:11.012" starttime="20180515 13:51:09.713"></status>
+<msg timestamp="20180515 16:48:37.419" level="INFO">Typing text '10013' into text field 'id=zip-code'</msg>
+<status status="PASS" endtime="20180515 16:48:40.563" starttime="20180515 16:48:37.418"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:11.012" starttime="20180515 13:51:00.964"></status>
+<status status="PASS" endtime="20180515 16:48:40.563" starttime="20180515 16:48:13.307"></status>
 </kw>
 <kw name="Input Master Card Information" library="CreditCard">
 <kw name="Input Text" library="Selenium2Library">
@@ -517,8 +517,8 @@
 <arg>id=pledge-credit-card</arg>
 <arg>${MASTER_CARD}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:11.013" level="INFO">Typing text '5555555555554444' into text field 'id=pledge-credit-card'</msg>
-<status status="PASS" endtime="20180515 13:51:12.330" starttime="20180515 13:51:11.013"></status>
+<msg timestamp="20180515 16:48:40.564" level="INFO">Typing text '5555555555554444' into text field 'id=pledge-credit-card'</msg>
+<status status="PASS" endtime="20180515 16:48:43.709" starttime="20180515 16:48:40.564"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -526,8 +526,8 @@
 <arg>id=pledge-expiration-month</arg>
 <arg>${EXPIRE_MONTH}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:12.330" level="INFO">Selecting value(s) '12' from list 'id=pledge-expiration-month'.</msg>
-<status status="PASS" endtime="20180515 13:51:14.277" starttime="20180515 13:51:12.330"></status>
+<msg timestamp="20180515 16:48:43.710" level="INFO">Selecting value(s) '12' from list 'id=pledge-expiration-month'.</msg>
+<status status="PASS" endtime="20180515 16:48:52.096" starttime="20180515 16:48:43.710"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -535,10 +535,10 @@
 <arg>id=pledge-expiration-year</arg>
 <arg>${EXPIRE_YEAR}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:14.278" level="INFO">Selecting value(s) '2020' from list 'id=pledge-expiration-year'.</msg>
-<status status="PASS" endtime="20180515 13:51:16.231" starttime="20180515 13:51:14.278"></status>
+<msg timestamp="20180515 16:48:52.097" level="INFO">Selecting value(s) '2020' from list 'id=pledge-expiration-year'.</msg>
+<status status="PASS" endtime="20180515 16:48:59.435" starttime="20180515 16:48:52.096"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:16.231" starttime="20180515 13:51:11.013"></status>
+<status status="PASS" endtime="20180515 16:48:59.435" starttime="20180515 16:48:40.563"></status>
 </kw>
 <kw name="Submit Donation" library="PledgePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -546,12 +546,12 @@
 <arguments>
 <arg>xpath=//input[@type='submit']</arg>
 </arguments>
-<msg timestamp="20180515 13:51:16.232" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
-<status status="PASS" endtime="20180515 13:51:16.941" starttime="20180515 13:51:16.232"></status>
+<msg timestamp="20180515 16:48:59.436" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" endtime="20180515 16:49:01.530" starttime="20180515 16:48:59.436"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:16.941" starttime="20180515 13:51:16.231"></status>
+<status status="PASS" endtime="20180515 16:49:01.530" starttime="20180515 16:48:59.436"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:16.941" starttime="20180515 13:50:55.850"></status>
+<status status="PASS" endtime="20180515 16:49:01.530" starttime="20180515 16:48:05.969"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="SetupEnv">
 <kw name="Run Keyword If" library="BuiltIn">
@@ -571,22 +571,22 @@
 <arg>${TEST_TAGS}</arg>
 <arg>${REMOTE_URL}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:17.465" html="yes" level="INFO">&lt;a href="https://saucelabs.com/jobs/81f18ad616bc44e0bc1f8038efb19943/video.flv"&gt;video.flv&lt;/a&gt;</msg>
-<status status="PASS" endtime="20180515 13:51:17.465" starttime="20180515 13:51:16.944"></status>
+<msg timestamp="20180515 16:49:05.726" html="yes" level="INFO">&lt;a href="https://saucelabs.com/jobs/81e3af7e93ae4f58b34d1a8e4c9d3025/video.flv"&gt;video.flv&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180515 16:49:05.726" starttime="20180515 16:49:01.532"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:17.465" starttime="20180515 13:51:16.943"></status>
+<status status="PASS" endtime="20180515 16:49:05.726" starttime="20180515 16:49:01.532"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180515 13:51:17.962" starttime="20180515 13:51:17.465"></status>
+<status status="PASS" endtime="20180515 16:49:06.771" starttime="20180515 16:49:05.726"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:17.962" starttime="20180515 13:51:16.942"></status>
+<status status="PASS" endtime="20180515 16:49:06.771" starttime="20180515 16:49:01.531"></status>
 </kw>
 <doc>This test cases to ensure users ability to pledge using Master Card.</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" endtime="20180515 13:51:17.962" critical="yes" starttime="20180515 13:50:49.905"></status>
+<status status="PASS" endtime="20180515 16:49:06.772" critical="yes" starttime="20180515 16:47:55.489"></status>
 </test>
 <test id="s1-t4" name="User should be able pledge using Disover Card">
 <kw type="setup" name="Begin Web Test" library="SetupEnv">
@@ -598,10 +598,10 @@
 <arg>remote_url=${REMOTE_URL}</arg>
 <arg>desired_capabilities=${DESIRED_CAPABILITIES}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:17.965" level="INFO">Opening browser 'Chrome' to base url 'about:blank' through remote server at 'http://jchowdry:45250833-e563-4360-8c72-a0d73e1385a5@ondemand.saucelabs.com:80/wd/hub'</msg>
-<status status="PASS" endtime="20180515 13:51:34.363" starttime="20180515 13:51:17.964"></status>
+<msg timestamp="20180515 16:49:06.774" level="INFO">Opening browser 'Chrome' to base url 'about:blank' through remote server at 'http://jchowdry:45250833-e563-4360-8c72-a0d73e1385a5@ondemand.saucelabs.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20180515 16:49:18.304" starttime="20180515 16:49:06.774"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:34.363" starttime="20180515 13:51:17.964"></status>
+<status status="PASS" endtime="20180515 16:49:18.304" starttime="20180515 16:49:06.773"></status>
 </kw>
 <kw name="User should be able to navigate to pledge app and pledge using Discover card" library="MonthlyDonation">
 <kw name="Load Page" library="PledgePage">
@@ -610,10 +610,10 @@
 <arguments>
 <arg>${URL.${ENVIRONMENT}}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:34.365" level="INFO">Opening url 'https://pledge-wnyc.demo.nypr.digital/donate/main/onestep/'</msg>
-<status status="PASS" endtime="20180515 13:51:49.269" starttime="20180515 13:51:34.365"></status>
+<msg timestamp="20180515 16:49:18.306" level="INFO">Opening url 'https://pledge-wnyc.demo.nypr.digital/donate/main/onestep/'</msg>
+<status status="PASS" endtime="20180515 16:49:22.513" starttime="20180515 16:49:18.306"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:49.270" starttime="20180515 13:51:34.364"></status>
+<status status="PASS" endtime="20180515 16:49:22.513" starttime="20180515 16:49:18.305"></status>
 </kw>
 <kw name="Verify Page Loaded" library="PledgePage">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -621,9 +621,9 @@
 <arguments>
 <arg>Pledge or Renew Your Support</arg>
 </arguments>
-<status status="PASS" endtime="20180515 13:51:49.708" starttime="20180515 13:51:49.271"></status>
+<status status="PASS" endtime="20180515 16:49:24.592" starttime="20180515 16:49:22.514"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:49.708" starttime="20180515 13:51:49.270"></status>
+<status status="PASS" endtime="20180515 16:49:24.592" starttime="20180515 16:49:22.513"></status>
 </kw>
 <kw name="Select Donation Amount" library="DonationAmount">
 <kw name="Click Element" library="Selenium2Library">
@@ -631,17 +631,119 @@
 <arguments>
 <arg>xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]</arg>
 </arguments>
-<msg timestamp="20180515 13:51:49.710" level="INFO">Clicking element 'xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="FAIL" endtime="20180515 13:51:50.893" starttime="20180515 13:51:50.893"></status>
+<msg timestamp="20180515 16:49:24.593" level="INFO">Clicking element 'xpath=html/body/div[3]/main/div[2]/div/form/fieldset/div[2]/label[2]'.</msg>
+<status status="PASS" endtime="20180515 16:49:26.688" starttime="20180515 16:49:24.593"></status>
 </kw>
-<msg timestamp="20180515 13:51:50.893" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
-<status status="FAIL" endtime="20180515 13:51:50.894" starttime="20180515 13:51:49.709"></status>
+<status status="PASS" endtime="20180515 16:49:26.689" starttime="20180515 16:49:24.593"></status>
 </kw>
-<status status="FAIL" endtime="20180515 13:51:50.895" starttime="20180515 13:51:49.708"></status>
+<kw name="Input Member information" library="MemberInfo">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=first-name</arg>
+<arg>${FIRST_NAME}</arg>
+</arguments>
+<msg timestamp="20180515 16:49:26.689" level="INFO">Typing text 'Jay' into text field 'id=first-name'</msg>
+<status status="PASS" endtime="20180515 16:49:30.882" starttime="20180515 16:49:26.689"></status>
 </kw>
-<status status="FAIL" endtime="20180515 13:51:50.895" starttime="20180515 13:51:34.364"></status>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=last-name</arg>
+<arg>${LAST_NAME}</arg>
+</arguments>
+<msg timestamp="20180515 16:49:30.882" level="INFO">Typing text 'Test' into text field 'id=last-name'</msg>
+<status status="PASS" endtime="20180515 16:49:34.028" starttime="20180515 16:49:30.882"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${EMAIL_ID}</arg>
+</arguments>
+<msg timestamp="20180515 16:49:34.028" level="INFO">Typing text 'test@example.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20180515 16:49:39.273" starttime="20180515 16:49:34.028"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=street-address</arg>
+<arg>${STREET_ADDRESS}</arg>
+</arguments>
+<msg timestamp="20180515 16:49:39.273" level="INFO">Typing text '160 Varrick Street' into text field 'id=street-address'</msg>
+<status status="PASS" endtime="20180515 16:49:43.302" starttime="20180515 16:49:39.273"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=city</arg>
+<arg>${CITY}</arg>
+</arguments>
+<msg timestamp="20180515 16:49:43.304" level="INFO">Typing text 'New York' into text field 'id=city'</msg>
+<status status="PASS" endtime="20180515 16:49:48.545" starttime="20180515 16:49:43.303"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects `*values` from list identified by `locator`</doc>
+<arguments>
+<arg>name=state</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20180515 16:49:48.545" level="INFO">Selecting value(s) '1' from list 'name=state'.</msg>
+<status status="PASS" endtime="20180515 16:49:55.883" starttime="20180515 16:49:48.545"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=zip-code</arg>
+<arg>${ZIPCODE}</arg>
+</arguments>
+<msg timestamp="20180515 16:49:55.883" level="INFO">Typing text '10013' into text field 'id=zip-code'</msg>
+<status status="PASS" endtime="20180515 16:50:00.075" starttime="20180515 16:49:55.883"></status>
+</kw>
+<status status="PASS" endtime="20180515 16:50:00.076" starttime="20180515 16:49:26.689"></status>
+</kw>
+<kw name="Input Discover Card Information" library="CreditCard">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=pledge-credit-card</arg>
+<arg>${DISCOVER_CARD}</arg>
+</arguments>
+<msg timestamp="20180515 16:50:00.077" level="INFO">Typing text '6011111111111117' into text field 'id=pledge-credit-card'</msg>
+<status status="PASS" endtime="20180515 16:50:04.270" starttime="20180515 16:50:00.076"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects `*values` from list identified by `locator`</doc>
+<arguments>
+<arg>id=pledge-expiration-month</arg>
+<arg>${EXPIRE_MONTH}</arg>
+</arguments>
+<msg timestamp="20180515 16:50:04.271" level="INFO">Selecting value(s) '12' from list 'id=pledge-expiration-month'.</msg>
+<status status="PASS" endtime="20180515 16:50:13.704" starttime="20180515 16:50:04.270"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects `*values` from list identified by `locator`</doc>
+<arguments>
+<arg>id=pledge-expiration-year</arg>
+<arg>${EXPIRE_YEAR}</arg>
+</arguments>
+<msg timestamp="20180515 16:50:13.705" level="INFO">Selecting value(s) '2020' from list 'id=pledge-expiration-year'.</msg>
+<status status="PASS" endtime="20180515 16:50:21.042" starttime="20180515 16:50:13.704"></status>
+</kw>
+<status status="PASS" endtime="20180515 16:50:21.042" starttime="20180515 16:50:00.076"></status>
+</kw>
+<kw name="Submit Donation" library="PledgePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//input[@type='submit']</arg>
+</arguments>
+<msg timestamp="20180515 16:50:21.043" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" endtime="20180515 16:50:25.255" starttime="20180515 16:50:21.043"></status>
+</kw>
+<status status="PASS" endtime="20180515 16:50:25.256" starttime="20180515 16:50:21.043"></status>
+</kw>
+<status status="PASS" endtime="20180515 16:50:25.256" starttime="20180515 16:49:18.304"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="SetupEnv">
 <kw name="Run Keyword If" library="BuiltIn">
@@ -661,41 +763,40 @@
 <arg>${TEST_TAGS}</arg>
 <arg>${REMOTE_URL}</arg>
 </arguments>
-<msg timestamp="20180515 13:51:51.338" html="yes" level="INFO">&lt;a href="https://saucelabs.com/jobs/471263d0635a4581847a69cb4239fd30/video.flv"&gt;video.flv&lt;/a&gt;</msg>
-<status status="PASS" endtime="20180515 13:51:51.338" starttime="20180515 13:51:50.897"></status>
+<msg timestamp="20180515 16:50:29.429" html="yes" level="INFO">&lt;a href="https://saucelabs.com/jobs/a0d7276ad2bd4314bc88f2513e15226b/video.flv"&gt;video.flv&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180515 16:50:29.429" starttime="20180515 16:50:25.257"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:51.338" starttime="20180515 13:51:50.896"></status>
+<status status="PASS" endtime="20180515 16:50:29.429" starttime="20180515 16:50:25.257"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180515 13:51:51.756" starttime="20180515 13:51:51.338"></status>
+<status status="PASS" endtime="20180515 16:50:30.477" starttime="20180515 16:50:29.429"></status>
 </kw>
-<status status="PASS" endtime="20180515 13:51:51.756" starttime="20180515 13:51:50.896"></status>
+<status status="PASS" endtime="20180515 16:50:30.477" starttime="20180515 16:50:25.256"></status>
 </kw>
 <doc>This test cases to ensure users ability to pledge using discover Card.</doc>
 <tags>
 <tag>Functional</tag>
 </tags>
-<status status="FAIL" endtime="20180515 13:51:51.756" critical="yes" starttime="20180515 13:51:17.963">Execution terminated by signal</status>
+<status status="PASS" endtime="20180515 16:50:30.477" critical="yes" starttime="20180515 16:49:06.772"></status>
 </test>
 <doc>This test suite will cover monthly donate related test scenarios such as donating using differents payment Method, with gifts and sizes,different doncation amounts etc.</doc>
-<status status="FAIL" endtime="20180515 13:51:51.758" starttime="20180515 13:49:43.439"></status>
+<status status="PASS" endtime="20180515 16:50:30.479" starttime="20180515 16:44:34.065"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="3">Critical Tests</stat>
-<stat fail="1" pass="3">All Tests</stat>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="1">Functional</stat>
+<stat fail="0" pass="2">Functional</stat>
 <stat fail="0" pass="2">Regression</stat>
 <stat fail="0" pass="3">Smoke</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="MonthlyDonationSuite" pass="3">MonthlyDonationSuite</stat>
+<stat fail="0" id="s1" name="MonthlyDonationSuite" pass="4">MonthlyDonationSuite</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20180515 13:51:50.893" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
 </errors>
 </robot>
